@@ -1,3 +1,0 @@
-/home/bcd/programming/csv_read/build/CMakeFiles/rebuild_cache.dir
-/home/bcd/programming/csv_read/build/CMakeFiles/edit_cache.dir
-/home/bcd/programming/csv_read/build/CMakeFiles/test.dir
