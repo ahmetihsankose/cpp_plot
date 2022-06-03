@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bcd/programming/csv_read -I/home/bcd/programming/csv_read/include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3 
+CXX_INCLUDES = -I/home/bcd/programming/csv_read/headers -I/home/bcd/programming/csv_read/include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3 
 

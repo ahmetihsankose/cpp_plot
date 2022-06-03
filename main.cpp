@@ -6,10 +6,11 @@
 #include <iterator>
 #include <matplotlibcpp.h>
 #include <Eigen/Dense>
+#include <catch.hpp>
 
 int main()
 {
-    std::ifstream is("/home/bcd/programming/csv_read/trajectory_dump2.csv");
+    std::ifstream is("/home/bcd/programming/csv_read/bctrajectory_dump.csv");
     std::istream_iterator<double> start(is), end;
     std::vector<double> numbers(start, end);
     // std::cout << "Read " << numbers.size() << " numbers" << std::endl;
@@ -17,7 +18,8 @@ int main()
     // print the numbers to stdout
     // std::cout << "numbers read in:\n";
     // std::copy(numbers.begin(), numbers.end(),
-    //           std::ostream_iterator<double>(std::cout, " "));
+    //           std::ostream_iterator<double>(std::cout, " "));        velx[i] = matrix[i][1];
+
     // std::cout << std::endl;
 
     int num_of_data = numbers.size();
@@ -72,6 +74,6 @@ int main()
     matplotlibcpp::grid(true);
     matplotlibcpp::title("Trajectory");
     matplotlibcpp::legend();
+    matplotlibcpp::save("/home/bcd/programming/csv_read/trajectory.png");
     matplotlibcpp::show();
-    matplotlibcpp::save("trajectory.png");
 }
